@@ -1,0 +1,17 @@
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\bin\Debug\netstandard2.0\XamarinTest.deps.json
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\bin\Debug\netstandard2.0\XamarinTest.dll
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\bin\Debug\netstandard2.0\ref\XamarinTest.dll
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\bin\Debug\netstandard2.0\XamarinTest.pdb
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.csproj.AssemblyReference.cache
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.AssemblyInfoInputs.cache
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.AssemblyInfo.cs
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.csproj.CoreCompileInputs.cache
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.dll
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\ref\XamarinTest.dll
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.pdb
