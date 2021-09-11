@@ -3,7 +3,8 @@
 ## 〇概要
 Xamarinの導入について。
 
-[01.新規プロジェクトの作成](docs/01_CreateNewProject.md)
+- [01.新規プロジェクトの作成](docs/01_CreateNewProject.md)
+    - [02. エミュレータの新規作成](docs/02_CreateEmulator.md)
 
 ## 〇構成
 
