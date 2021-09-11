@@ -36,6 +36,8 @@
 [Visual C#アイテム]>[Xamarin.Forms]>[コンテンツページ]  
 (コンテンツページ(C#)は違う。)
 
+今回はコンテンツページ名は「MainPage」とした。
+
 ![ファイル追加例(MainPageを追加)](../image/01-4_ファイル追加例.png)
 
 
@@ -45,7 +47,6 @@
 #### 4-2-1. MainPage.xamlのコードを以下のように修正(MainPageのデザイン編集)
 
 [コード](./01_4-2-1_MainPage.xaml)
-![画面例(MainPageを追加)](../image/01-4-2-1_画面例.png)  
 
 #### 4-2-2. NotesPage.xaml.csのコードを以下のように修正(MainPageの動作を編集)
 
