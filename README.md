@@ -3,7 +3,8 @@
 ## 〇概要
 Xamarinの導入について。
 
-- [01.新規プロジェクトの作成](docs/01_CreateNewProject.md)
+- [00. Xamarinのインストール](https://www.ipentec.com/document/visual-studio-install-xamarin-development-environment)
+- [01. 新規プロジェクトの作成](docs/01_CreateNewProject.md)
     - [02. エミュレータの新規作成](docs/02_CreateEmulator.md)
 
 ## 〇構成
