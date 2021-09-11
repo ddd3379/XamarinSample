@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTest.Views.AboutPage">
+
+    <!-- オブジェクトを縦に並べる -->
+    <StackLayout>
+        <!-- テキスト表示 -->
+        <Label x:Name="testLabel" Text="テキスト表示" TextColor="Red" FontSize="Small"/>
+
+        <!-- ボタン -->
+        <!-- Clickedでボタンが押されたときに呼び出される関数を指定（.csファイル参照） -->
+        <Button Text="Button" Clicked="OnButtonClicked"/>
+
+
+        <!-- テキスト入力 -->
+        <!-- 1行入力 -->
+        <Entry x:Name="testEntry"/>
+        <Button Text="View" Clicked="OnEntryButtonClicked"/>
+        <Label x:Name="entryLabel" Text="Entryテキスト表示" TextColor="Blue" FontSize="Small"/>
+
+        <!-- 複数行入力(HeightRequestで高さ指定可能)-->
+        <Editor x:Name="testEditor" HeightRequest="80"/>
+        <Button Text="View" Clicked="OnEditorButtonClicked"/>
+        <Label x:Name="editorLabel" Text="Editorテキスト表示" TextColor="Green" FontSize="Small"/>
+
+
+        <Label Text="StackLayout(横並び)"/>
+        <!-- StackLayout(横並び) -->
+        <StackLayout Orientation="Horizontal">
+            <!-- 左寄せ -->
+            <Label Text="Start" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+            <!-- センター寄せ -->
+            <Label Text="Center" HorizontalOptions="Center" VerticalOptions="Center" />
+            <!-- 右寄せ -->
+            <Label Text="End" HorizontalOptions="EndAndExpand" VerticalOptions="Center" />
+        </StackLayout>
+
+
+        <Label Text="StackLayout(縦並び)"/>
+        <!-- StackLayout(縦並び) -->
+        <StackLayout Orientation="Vertical">
+            <!-- 上寄せ -->
+            <Label Text="Start" HorizontalOptions="Center" VerticalOptions="StartAndExpand" />
+            <!-- センター寄せ -->
+            <Label Text="Center" HorizontalOptions="Center" VerticalOptions="Center" />
+            <!-- 下寄せ -->
+            <Label Text="End" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+        </StackLayout>
+
+
+        <Label Text="GridLayout"/>
+        <Grid>
+            <!-- ■初めに各グリッドのサイズを指定する -->
+            <!-- サイズの指定方法①：絶対値⇒各プラットフォームや端末で実 pixel 数は異なる -->
+            <!-- サイズの指定方法②：Auto⇒内包するコントロールのうち、最大のものに併せる-->
+            <!-- サイズの指定方法③：Star⇒絶対値、Auto の残りをStarで指定したもので分割 -->
+
+            <!-- 各行サイズの定義(高さ) -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="200" />
+            </Grid.RowDefinitions>
+
+            <!-- 各列サイズの定義(幅) -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <!-- ■コントロールをGridに配置する -->
+            <!-- Grid.Row="0" で行の位置を指定 -->
+            <!-- Grid.Column="0" で列の位置を指定 -->
+            <!-- Grid.RowSpan="2" で複数の行を使用 -->
+            <!-- Grid.ColumnSpan="2" で複数の列を使用 -->
+            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="#ffaaaa" />
+            <BoxView Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"  BackgroundColor="#aaffaa"/>
+            <BoxView Grid.Row="1" Grid.Column="0"  BackgroundColor="#aaaaff"/>
+            <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#aaaaaa" />
+
+            <Label Grid.Row="0" Grid.Column="0" Text="(0,0)" />
+            <Label Grid.Row="0" Grid.Column="1" Text="(1,0)" />
+            <Label Grid.Row="1" Grid.Column="0" Text="(0,1)" />
+            <Label Grid.Row="1" Grid.Column="1" Text="(1,1)" />
+            <Label Grid.Row="2" Grid.Column="0" Text="(0,2)" />
+            <Label Grid.Row="2" Grid.Column="1" Text="(1,2)" />
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>

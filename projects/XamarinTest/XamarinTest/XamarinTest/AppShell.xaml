@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:XamarinTest.Views"
+       Title="XamarinTest"
+       x:Class="XamarinTest.AppShell">
+
+    <!-- タブで遷移したい画面分<ShellContent>を呼ぶ -->
+    <TabBar>
+        <!-- Title：表示されるテキスト -->
+        <!-- Icon：表示される画像を指定(Resources/drawable内の画像が呼ばれる) -->
+        <!-- ContentTemplate：呼び出すページを指定 -->
+        
+        <!-- MainPage -->
+        <ShellContent Title="MainPage"
+                      Icon="icon_feed.png" 
+                      ContentTemplate="{DataTemplate local:MainPage}" />
+
+        <!-- AboutPage -->
+        <ShellContent Title="AboutPage"
+                      Icon="icon_about.png" 
+                      ContentTemplate="{DataTemplate local:AboutPage}" />
+    </TabBar>
+
+
+</Shell>
