@@ -42,5 +42,22 @@ namespace XamarinTest
                 return diaryDatabase;
             }
         }
+
+        /// <summary>
+        /// タグデータベースを開くソース
+        /// </summary>
+        static string tagDbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "tag.db3");
+        static TagDAO tagDatabase;
+        public static TagDAO tagDAO
+        {
+            get
+            {
+                if (tagDatabase == null)
+                {
+                    tagDatabase = new TagDAO(tagDbPath);
+                }
+                return tagDatabase;
+            }
+        }
     }
 }

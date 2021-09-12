@@ -16,6 +16,11 @@
                       Icon="icon_feed.png" 
                       ContentTemplate="{DataTemplate local:MainPage}" />
 
+        <!-- TagPage -->
+        <ShellContent Title="TagPage"
+                      Icon="icon_feed.png" 
+                      ContentTemplate="{DataTemplate local:TagPage}" />
+
         <!-- AboutPage -->
         <ShellContent Title="AboutPage"
                       Icon="icon_about.png" 

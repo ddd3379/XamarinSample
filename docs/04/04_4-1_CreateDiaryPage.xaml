@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="XamarinTest.Views.CreateDiaryPage"
+             Title="CreateDiary">
+    
+    <StackLayout>
+
+        <!-- 操作ボタン -->
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Fill">
+            <!-- 押されたら、呼び出し元画面に戻る -->
+            <Button Text="戻る"
+                HorizontalOptions="StartAndExpand"
+                Clicked="OnBackButtonClicked" />
+            
+            <!-- 押されたら、 入力された情報を表示する。-->
+            <Button Text="保存"
+                HorizontalOptions="End"
+                Clicked="OnSaveButtonClicked" />
+        </StackLayout>
+
+        
+        
+        
+        <!-- 各種入力欄 -->
+        <StackLayout Orientation="Vertical"
+                     HorizontalOptions="Fill">
+            <!-- 日付選択欄(初期設定は今の時間) -->
+            <DatePicker x:Name="Date" 
+                Format="yyyy/MM/dd"
+                Date="{x:Static sys:DateTime.Now}"/>
+            
+            <!-- タイトル入力欄 -->
+            <Entry x:Name="Title"
+                Placeholder="Enter Title" />
+            
+            <!-- 日記の詳細入力欄 -->
+            <Editor x:Name="Detail"
+                Placeholder="Enter Details"
+                HorizontalOptions="Fill"
+                VerticalOptions="StartAndExpand"
+                HeightRequest="400"/>
+        </StackLayout>
+
+        
+        <!-- タグ -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="tag1" Text="タグ1を設定" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTag1Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="tag2" Text="タグ2を設定" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTag2Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="tag3" Text="タグ3を設定" HorizontalOptions="Center" Grid.Column="2" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTag3Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </Grid>
+        
+        
+    </StackLayout>
+</ContentPage>
