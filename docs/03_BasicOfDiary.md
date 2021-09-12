@@ -192,7 +192,7 @@ DisplayAlert()：ポップアップのメッセージを表示する。
 ## 4. 過去の日記データを編集可能にする
 
 ### 4-1. 日記作成ページに過去の日記データが渡されたときの処理を追加
-[CreateDiaryPage.xaml.cs](./03/03_4-1_CreateDiaryPage.xaml)
+[CreateDiaryPage.xaml.cs](./03/03_4-1_CreateDiaryPage.xaml.cs)
 
 
 ### 4-2. 過去の日記データを選択されたときの処理を追加
