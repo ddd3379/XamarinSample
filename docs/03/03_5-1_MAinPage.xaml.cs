@@ -126,7 +126,7 @@ namespace XamarinTest.Views
                 temp = await App.diaryDAO.GetDiaryAsyncSorted();
                 diaryList.ItemsSource = temp;
 
-                // 編集モードを変更する
+                // 編集モードを変更
                 ChangeMode();
             }
         }
