@@ -124,3 +124,82 @@ DisplayAlert()：ポップアップのメッセージを表示する。
 ![実行結果](../image/03/03_2-2_xamarinTest001.gif)  
 
 
+
+
+
+## 3. データベースの作成
+
+### 3-1. sqlite-net-pclを追加
+
+1. (ソリューション名)を右クリック⇒NuGetパッケージの管理を選択。
+![NuGetパッケージの管理](../image/03/03_3_NuGetパッケージ管理.png)
+
+
+2. 参照を選択し、「sqlite-net-pcl」を検索。
+![sqlite-net-pcl](../image/03/03_3_sqlite-net-pcl.png)
+
+3. 「インストール」を選択
+
+
+
+
+### 3-2. データベースのテーブルを作成
+
+1. (プロジェクト名)の下に「DB」フォルダの作成
+
+2. DBフォルダ内に日記のデータベースのひな型を作成  
+[Visual C#アイテム]>[クラス]  (Diaryを作成)    
+[Diary.cs](./03/03_3-2_Diary.cs)  
+⇒ DiaryId, Date, Title, Detailの4つで問題ないが、今後の拡張を考え、あらかじめ予備のデータ格納場所を用意する。
+
+3. データベースを操作するクラスの作成
+[Visual C#アイテム]>[クラス]  (DiaryDAOを作成)    
+[DiaryDAO.cs](./03/03_3-2_DiaryDAO.cs)  
+
+
+
+
+### 3-3. DB操作を追加
+
+1. データベースを開くコードの追加(App.xaml.csを編集)  
+[App.xaml.cs](./03/03_3-3_App.xaml.cs)  
+
+
+2. DBへ保存するコードに修正  
+[CreateDiaryPage.xaml.cs](./03/03_3-3_CreateDiaryPage.xaml.cs)
+
+
+
+
+### 3-4. DBに追加されているデータをMainPageで表示する
+
+1. MainPage.xamlを編集（デザインを編集）  
+[MainPage.xaml](./03/03_3-4_MainPage.xaml)
+
+
+2. MainPage.xaml.csを編集 (表示の直前にデータベースの情報を反映)   
+[MainPage.xaml.cs](./03/03_3-4_MainPage.xaml)
+
+
+### 3-5. 実行結果
+
+![実行結果](../image/03/03_3-4_xamarinTest002.gif)
+
+
+
+
+
+## 4. 過去の日記データを編集可能にする
+
+### 4-1. 日記作成ページに過去の日記データが渡されたときの処理を追加
+[CreateDiaryPage.xaml.cs](./03/03_4-1_CreateDiaryPage.xaml)
+
+
+### 4-2. 過去の日記データを選択されたときの処理を追加
+
+- [MainPage.xaml](./03/03_4-2_MainPage.xaml)
+- [MainPage.xaml.cs](./03/03_4-2_MainPage.xaml.cs)
+
+### 4-3. 実行結果
+
+![実行結果](../image/03/03_4-3_xamarinTest003.gif)
