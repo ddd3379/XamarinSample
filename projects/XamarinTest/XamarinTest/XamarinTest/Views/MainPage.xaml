@@ -5,10 +5,12 @@
              Title="MainPage"> <!-- タイトルの追加 -->
     
     <!-- 以下が画面に表示する内容 -->
-    
-    <!-- 画面上に「Hello, World!!!」のテキストを表示する -->
-    <Label Text="Hello, World!!!" FontSize="Large" TextColor="Black"/>
-
+    <StackLayout>
+        <!-- 日記の新規作成ボタン -->
+        <Button Text="新規作成"
+                VerticalOptions="EndAndExpand"
+                Clicked="OnNewDiaryButtonClicked" />
+    </StackLayout>
     <!-- 以上が画面に表示する内容 -->
 
 </ContentPage>
