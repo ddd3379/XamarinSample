@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTest.Views.TagPage"
+             Title="Tag">
+    <StackLayout Margin="20">
+        
+        <!-- 機能表示 -->
+        <StackLayout Orientation="Horizontal">
+            <!-- タグを追加するボタン -->
+            <Button x:Name="AddButton"
+                    Text="追加"
+                    Clicked="OnAddButtonClicked"/>
+            
+            <!-- チェックした要素を削除するボタン -->
+            <Button x:Name="DeleteButton"
+                    Text="削除"
+                    Clicked="OnDeleteButtonClicked"
+                    TextColor="Red"
+                    IsVisible="false"/>
+            
+            <!-- 削除ボタンとCheckBoxを表示する -->
+            <Button x:Name="EditButton"
+                    Text="編集"
+                    Clicked="OnEditButtonClicked"
+                    HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+
+        <!-- タグ名を入力する欄 -->
+        <Entry x:Name="inputText" />
+
+
+        <!-- タグ一覧を表示 -->
+        <ListView x:Name="tagList"
+                  ItemTapped="TappedTagListItem"
+                  HasUnevenRows = "True">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <!-- 2行１列のグリッドを作成 -->
+                            <Grid.ColumnDefinitions>
+
+                                <!-- チェックボックスを表示する領域 -->
+                                <ColumnDefinition Width="30"/>
+
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+                            <!-- チェックボックス -->
+                            <CheckBox IsChecked="{Binding isChecked}"
+                                      IsVisible="{Binding editMode}"
+                                      Grid.Column="0"/>
+                            
+                            <!-- タグ名 -->
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="1">
+                                <Label Text="{Binding Text}" HeightRequest="35"/>
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView >
+        
+        
+    </StackLayout>
+</ContentPage>

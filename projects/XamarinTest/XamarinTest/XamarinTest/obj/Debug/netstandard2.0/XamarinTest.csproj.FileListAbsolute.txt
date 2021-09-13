@@ -16,3 +16,5 @@ D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\
 D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\ref\XamarinTest.dll
 D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\XamarinTest.pdb
 D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\Views\CreateDiaryPage.xaml.g.cs
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\Views\TagPage.xaml.g.cs
+D:\Develop\workspace\XamarinSample\projects\XamarinTest\XamarinTest\XamarinTest\obj\Debug\netstandard2.0\Views\TagDetailPage.xaml.g.cs

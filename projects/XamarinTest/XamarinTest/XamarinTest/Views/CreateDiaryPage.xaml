@@ -41,8 +41,36 @@
                 Placeholder="Enter Details"
                 HorizontalOptions="Fill"
                 VerticalOptions="StartAndExpand"
-                HeightRequest="550"/>
+                HeightRequest="400"/>
         </StackLayout>
 
+        
+        <!-- タグ -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="tag1" Text="タグ1を設定" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTag1Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="tag2" Text="タグ2を設定" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTag2Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="tag3" Text="タグ3を設定" HorizontalOptions="Center" Grid.Column="2" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTag3Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </Grid>
+        
+        
     </StackLayout>
 </ContentPage>

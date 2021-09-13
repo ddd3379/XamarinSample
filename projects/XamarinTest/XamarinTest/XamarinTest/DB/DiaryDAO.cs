@@ -66,6 +66,16 @@ namespace XamarinTest.DB
             DateTime nextDay = dateTime.AddMonths(1);
             return _database.Table<Diary>().Where(i => (i.Date >= dateTime && i.Date < nextDay)).OrderByDescending(x => x.Date).ToListAsync();
         }
+        /// <summary>
+        /// 指定したタグのデータを取得
+        /// </summary>
+        /// <returns></returns>
+        public Task<List<Diary>> GetDiaryAsyncDateTag(Tag tag)
+        {
+            return _database.Table<Diary>().Where(i => i.Tag1 == tag.TagID ||
+                                                       i.Tag2 == tag.TagID ||
+                                                       i.Tag3 == tag.TagID ).OrderByDescending(x => x.Date).ToListAsync();
+        }
 
         /// <summary>
         /// 新規データの挿入(diaryIDを指定すれば、そのデータを更新する)
