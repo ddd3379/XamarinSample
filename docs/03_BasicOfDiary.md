@@ -178,7 +178,7 @@ DisplayAlert()：ポップアップのメッセージを表示する。
 
 
 2. MainPage.xaml.csを編集 (表示の直前にデータベースの情報を反映)   
-[MainPage.xaml.cs](./03/03_3-4_MainPage.xaml)
+[MainPage.xaml.cs](./03/03_3-4_MainPage.xaml.cs)
 
 
 ### 3-5. 実行結果
